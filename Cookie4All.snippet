@@ -9,9 +9,9 @@
 #    用法：打开哔哩哔哩漫画后 (AppStore中国区)，单击"我的", 如果通知获取cookie成功, 则可以使用此脚本. 
 ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
 
-# 3. 腾讯视频——获取cookie
+# 3. 腾讯视频——获取cookie(不可用）
 #    用法：手机浏览器访问下: https://film.qq.com/ 随便选 1 部电影观看。手机浏览器访问下: http://v.qq.com/x/bu/mobile_checkin 页面提示提示签到成功, 系统提示: 获取Cookie: 成功 （为保成功率，请刷新一下页面再获取一次）（不要用APP）
-^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header  https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+#^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header  https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
 
 # 4. 京东——获取cookie
 #    用法：Safari浏览器打开登录 https://home.m.jd.com/myJd/newhome.action 点击"我的"页面，或者使用旧版网址 https://bean.m.jd.com/bean/signIndex.action 点击签到并且出现签到日历。如果通知获取Cookie成功, 则可以使用此签到脚本. 注: 请勿在京东APP内获取!!!
@@ -22,10 +22,10 @@
 # 获取钢镚签到body. 
 ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/hy\/h5\/m\/appSign\? url script-request-body https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-# 5. 美团外卖——获取cookie
+# 5. 美团外卖——获取cookie（不可用）
 #    用法：打开APP,进入签到页面,系统提示: 获取刷新链接: 成功，然后手动签到 1 次, 系统提示: 获取Cookie: 成功。运行一次脚本, 如果提示重复签到, 那就算成功了!
-^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
-^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
+#^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
+#^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
 
 # 6. 芒果TV——获取cookie
 #    用法：打开 APP 然后手动签到 1 次, 系统提示: 获取Cookie: 成功
