@@ -1,11 +1,11 @@
 # NAME: Criterion Channel
 # AUTHOR: Custom Rule (Optimized)
 # UPDATED: 2025-10-21
-# HOST: 7
-# HOST-SUFFIX: 10
+# HOST: 8
+# HOST-SUFFIX: 11
 # HOST-KEYWORD: 1
 # USER-AGENT: 1
-# TOTAL: 19
+# TOTAL: 21
 
 # ========== 主域名 ==========
 HOST,www.criterionchannel.com,CriterionChannel
@@ -22,6 +22,8 @@ HOST-SUFFIX,janusfilms.com,CriterionChannel
 
 # ========== Vimeo OTT平台（Criterion使用的流媒体后端）==========
 # 注意：只匹配Criterion专用的Vimeo子域名，避免影响普通Vimeo访问
+HOST,api.vhx.com,CriterionChannel
+HOST-SUFFIX,vhx.com,CriterionChannel
 HOST-SUFFIX,criterionchannel.vhx.tv,CriterionChannel
 HOST-SUFFIX,vhx.tv,CriterionChannel
 
