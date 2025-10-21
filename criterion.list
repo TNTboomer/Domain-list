@@ -1,0 +1,40 @@
+# NAME: Criterion Channel
+# AUTHOR: Custom Rule (Optimized)
+# UPDATED: 2025-10-21
+# HOST: 7
+# HOST-SUFFIX: 10
+# HOST-KEYWORD: 1
+# USER-AGENT: 1
+# TOTAL: 19
+
+# ========== 主域名 ==========
+HOST,www.criterionchannel.com,CriterionChannel
+HOST,criterionchannel.com,CriterionChannel
+HOST,api.criterionchannel.com,CriterionChannel
+HOST,auth.criterionchannel.com,CriterionChannel
+HOST,player.criterionchannel.com,CriterionChannel
+HOST,content.criterionchannel.com,CriterionChannel
+HOST,signup.criterionchannel.com,CriterionChannel
+
+# ========== 相关域名 ==========
+HOST-SUFFIX,criterion.com,CriterionChannel
+HOST-SUFFIX,janusfilms.com,CriterionChannel
+
+# ========== Vimeo OTT平台（Criterion使用的流媒体后端）==========
+# 注意：只匹配Criterion专用的Vimeo子域名，避免影响普通Vimeo访问
+HOST-SUFFIX,criterionchannel.vhx.tv,CriterionChannel
+HOST-SUFFIX,vhx.tv,CriterionChannel
+
+# ========== CDN域名（精确匹配）==========
+# 只匹配Criterion专用的CDN子域名，不影响其他网站
+HOST-SUFFIX,criterionchannel.akamaized.net,CriterionChannel
+HOST-SUFFIX,criterion-streaming.akamaized.net,CriterionChannel
+HOST-SUFFIX,criterion.cloudfront.net,CriterionChannel
+HOST-SUFFIX,criterionchannelcontent.com,CriterionChannel
+
+# ========== 关键词匹配（谨慎使用）==========
+# 只匹配criterion相关，不匹配vimeo（太宽泛）
+HOST-KEYWORD,criterionchannel,CriterionChannel
+
+# ========== User Agent ==========
+USER-AGENT,Criterion*,CriterionChannel
